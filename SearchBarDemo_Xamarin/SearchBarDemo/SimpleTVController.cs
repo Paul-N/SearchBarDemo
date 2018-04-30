@@ -10,6 +10,11 @@ namespace SearchBarDemo
         {
         }
 
+        public SimpleTVController() : base()
+        {
+
+        }
+
 		public override void ViewDidLoad()
 		{
             base.ViewDidLoad();
@@ -18,7 +23,6 @@ namespace SearchBarDemo
                 DimsBackgroundDuringPresentation = false
             };
             DefinesPresentationContext = true;
-
             NavigationItem.TitleView = search.SearchBar;
 		}
 

@@ -20,7 +20,10 @@ namespace SearchBarDemo
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
-
+            Window = new UIWindow(UIScreen.MainScreen.Bounds);
+            // set our root view controller with the sidebar menu as the apps root view controller
+            Window.RootViewController = new UINavigationController(new SimpleTVController());
+            Window.MakeKeyAndVisible();
             return true;
         }
 
