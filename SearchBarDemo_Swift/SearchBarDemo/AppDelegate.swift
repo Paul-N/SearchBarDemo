@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // If not required for your application you can safely delete this method
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // set our root view controller with the sidebar menu as the apps root view controller
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.makeKeyAndVisible()
         return true
     }
 
